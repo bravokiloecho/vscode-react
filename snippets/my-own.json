@@ -1,0 +1,70 @@
+{
+	"React map": {
+    "prefix": "rmap",
+    "scope": "javascriptreact",
+		"body": [
+			"{${1:arr}.map((${2:el}, index) => {",
+			"\treturn <${3:El} key={`${1:arr}-${index}`}>${4:content}</${3:El}>",
+			"})}"
+		],
+		"description": "React create loop"
+	},
+	"Insert HTML": {
+    "prefix": "danger",
+    "scope": "javascriptreact",
+		"body": "dangerouslySetInnerHTML={{ __html: ${1:html} }}"
+	},
+	"React useState": {
+    "prefix": "rus",
+    "scope": "javascriptreact",
+		"body": [
+			"const [${1:name}, ${2:setName}] = React.useState(${3:state})"
+		],
+		"description": "React useState"
+	},
+	"React use effect": {
+    "prefix": "rue",
+    "scope": "javascriptreact",
+		"body": [
+			"React.useEffect(() => {",
+			"\t$2",
+			"}, [${1:watch}])"
+		],
+		"description": "React use effect"
+	},
+	"React use ref": {
+    "prefix": "rur",
+    "scope": "javascriptreact",
+		"body": [
+			"const ${1:name} = React.useRef(${2:null})"
+		],
+		"description": "React use effect"
+	},
+	"React use context": {
+    "prefix": "ruc",
+    "scope": "javascriptreact",
+		"body": [
+			"const ${1:context} = React.useContext(${2:Context})"
+		],
+		"description": "React import component"
+	},
+	"React import component": {
+    "prefix": "rimp",
+    "scope": "javascriptreact",
+		"body": [
+			"import ${1:Component} from './${1:Component}'"
+		],
+		"description": "React import component"
+	},
+	"Prop Type defaults": {
+    "prefix": "ptdf",
+    "scope": "javascriptreact",
+		"body": [
+			"${1:${TM_FILENAME_BASE}}.defaultProps = {",
+			"\t${2:prop}: ${3:default},",
+			"}",
+			""
+		],
+		"description": "Default props"
+	}
+}
