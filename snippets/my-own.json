@@ -15,7 +15,7 @@
 	"React useState": {
     "prefix": "rus",
 		"body": [
-			"const [${1:name}, ${2:setName}] = React.useState(${3:state})"
+			"const [${1:name}, set${1/(.*)$/${1:/capitalize}/}] = React.useState(${3:state})"
 		],
 		"description": "React useState"
 	},
