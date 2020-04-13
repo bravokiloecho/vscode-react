@@ -35,8 +35,9 @@
 		],
 		"description": "React use effect"
 	},
+	
 	"React use context": {
-    "prefix": "ruc",
+    "prefix": "ruco",
 		"body": [
 			"const ${1:context} = React.useContext(${2:Context})"
 		],
@@ -46,7 +47,16 @@
 		"prefix": "rum",
 		"body": [
 			"const ${1:memo} = React.useMemo(() => {",
-			"\t${2:function}",
+			"\treturn ${2: // do something}",
+			"}, [${3:watch}])"
+		],
+		"description": "React useMemo"
+	},
+	"React useCallback": {
+		"prefix": "ruca",
+		"body": [
+			"const ${1:functionName} = React.useCallback(() => {",
+			"\t${2:doSomething()}",
 			"}, [${3:watch}])"
 		],
 		"description": "React useMemo"
