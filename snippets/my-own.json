@@ -64,7 +64,7 @@
 	"React import component": {
     "prefix": "rimp",
 		"body": [
-			"import ${1:Component} from './${1:Component}'"
+			"import ${1:Component} from '@/${1:Component}'"
 		],
 		"description": "React import component"
 	},
