@@ -77,5 +77,10 @@
 			""
 		],
 		"description": "Default props"
+	},
+	"Class name Array": {
+		"prefix": "cna",
+		"body": "className={[$1].join(' ')}",
+		"description": "Create an empty array of classname"
 	}
 }
