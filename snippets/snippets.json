@@ -49,6 +49,11 @@
     "body": "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1:${TM_FILENAME_BASE}} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t)\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n}\n\nexport default ${1:${TM_FILENAME_BASE}}",
     "description": "Creates a stateless React component with PropTypes and ES6 module system"
   },
+  "reactStatelessPropsClassName": {
+    "prefix": "rscpc",
+    "body": "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1:${TM_FILENAME_BASE}} = ({ className }) => {\n\treturn (\n\t\t<div\n\t\t\tclassName={[\n\t\t\t\tclassName,\n\t\t\t].join(' ')}\n\t\t>\n\t\t\t$2\n\t\t</div>\n\t)\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\tclassName: PropTypes.string,\n}\n\nTest.defaultProps = {\n\tclassName: null,\n}\n\nexport default ${1:${TM_FILENAME_BASE}}\n",
+    "description": "Creates a stateless React component with PropTypes and a className and ES6 module system"
+  },
   "reactHookProps": {
     "prefix": "rhc",
     "body": "import React,{ useState } from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1:${TM_FILENAME_BASE}} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t)\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n}\n\nexport default ${1:${TM_FILENAME_BASE}}",
