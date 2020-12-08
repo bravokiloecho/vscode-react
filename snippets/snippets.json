@@ -61,7 +61,7 @@
   },
   "reactMemoProps": {
     "prefix": "rscpm",
-    "body": "import React, { memo } from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1:${TM_FILENAME_BASE}} = memo((props) => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t)\n})\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n}\n\nexport default ${1:${TM_FILENAME_BASE}}",
+    "body": "import React, { memo } from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1:${TM_FILENAME_BASE}} = memo((props) => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t)\n})\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n}\n\nexport default ${1:${TM_FILENAME_BASE}}\n",
     "description": "Creates a memoized stateless React component with PropTypes and ES6 module system"
   },
   "flowStatelessComponent": {
